@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #1a1410 0%, #7e561a 100%);
   min-height: 100vh;
   display: flex;
@@ -46,10 +46,10 @@ h1 {
   border-radius: 8px;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.3 ease;
+  transition: border-color 0.3s ease;
 }
 
-#taskinput:focus {
+#taskInput:focus {
   border-color: #7e561a;
 }
 
@@ -121,4 +121,64 @@ h1 {
   color: #adb5bd;
   font-style: italic;
   padding: 20px 0;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #taskInput {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  #addBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  #taskList li {
+    padding: 10px 12px;
+  }
+
+  #taskList li .task-text {
+    font-size: 0.9rem;
+  }
+
+  #taskList li .delete-btn {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .empty-message {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium phones (401px - 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  #addBtn {
+    padding: 10px 16px;
+  }
 }
