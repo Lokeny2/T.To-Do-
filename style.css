@@ -1,81 +1,83 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #1a1410 0%, #7e561a 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1410 0%, #7e561a 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 /* CONTAINER */
-.container{
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    max-width: 500px;
-    width: 100%;
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
 }
 
-h1{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #1a1410;
-    margin-bottom: 1.5rem;
-    text-align: center;
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1410;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 /* INPUT SECTION */
-.input-section{
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1.5rem;
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
-#taskInput{
-    flex: 1;
-    padding: 12px 16px;
-    border: 2px solid #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3 ease;
+#taskInput {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3 ease;
 }
 
-#taskinput:focus{
-    border-color: #7e561a;
+#taskinput:focus {
+  border-color: #7e561a;
 }
 
-#addBtn{
-    padding: 12px 24px;
-    background: #7e561a;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
+#addBtn {
+  padding: 12px 24px;
+  background: #7e561a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 }
-#addBtn:hover{
-    background: #5a3d12;
-    transform: translateY(-2px);
+#addBtn:hover {
+  background: #5a3d12;
+  transform: translateY(-2px);
 }
-#addBtn:active{
-    transform: translateY(0);
+#addBtn:active {
+  transform: translateY(0);
 }
 
 /* TASK LIST */
-#taskList{
-    list-style: none;
-    padding: 0;
+#taskList {
+  list-style: none;
+  padding: 0;
 }
 #taskList li {
   display: flex;
@@ -111,4 +113,12 @@ h1{
 
 #taskList li .delete-btn:hover {
   background: #c82333;
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  color: #adb5bd;
+  font-style: italic;
+  padding: 20px 0;
 }
