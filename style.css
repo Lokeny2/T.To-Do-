@@ -122,3 +122,63 @@ h1 {
   font-style: italic;
   padding: 20px 0;
 }
+
+/* Media Queries */
+@media (max-width: 400px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #taskInput {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  #addBtn {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  #taskList li {
+    padding: 10px 12px;
+  }
+
+  #taskList li .task-text {
+    font-size: 0.9rem;
+  }
+
+  #taskList li .delete-btn {
+    padding: 4px 10px;
+    font-size: 0.75rem;
+  }
+
+  .empty-message {
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium phones (401px - 576px) */
+@media (max-width: 576px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  #addBtn {
+    padding: 10px 16px;
+  }
+}
